@@ -1,0 +1,19 @@
+﻿2021 02 22 1410 
+	1.	*Create Folders: Commands, DataModels, ViewModels, Views
+	2.	*Create class ViewModels.BaseViewModel
+	3.	*Create class ViewModels.MainViewModel
+	4.	Create class Commands.UpdateViewCommand
+	5.	*Add Views and ViewModels namespace to App.xaml
+	6.	*In MainWindow create a grid with 3 rows (50, 50, *)
+	7.	*Add a menu to row 0
+	8.	*Add a TextBlock to row 1
+	9.	*Add a ContentControl to row 2
+	10.	*Usercontrols to add to Views
+		a.	*SubjectsTreeView // contains the hierarchical subjects
+		b.	*QACreateEditView // creates or edita a Question and answer file
+	11.	In ViewModels add a SubjectsTreeViewModel and a QACreateEditViewModel
+	12.	In the App.xaml create an Application Resource to house a <DataTemplate this allows 
+		the ContentControl  have SubjectsTreeViewModel and a QACreateEditViewModel
+	13.	In the Commands.UpdateViewCommand, if the parameter passed = "SubjectTree" then 
+		create a new instance of the SubjectsTreeViewModel, if the parameter passed = "QACreateEdit" then
+		create a new instance of the QACreateEditViewModel
