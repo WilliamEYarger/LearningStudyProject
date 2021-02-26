@@ -390,6 +390,7 @@ namespace LearningStudyProject.Views
             }
 
             SubjectStaticMembers.DataNode = SelectedNode;
+            MessageBox.Show("Click  DataFiles -> Creat/Edit QA File");
         }
     }
 }

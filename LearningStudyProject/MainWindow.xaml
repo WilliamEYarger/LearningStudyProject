@@ -25,13 +25,12 @@
             </MenuItem>
             <MenuItem Header="     _Data Files">
                 <MenuItem Header="Creat/Edit QA File"
+                 Command="{Binding UpdateViewCommand}"                          
                    CommandParameter="QACreateEdit"/>
             </MenuItem> 
                       
         </Menu>
-        <TextBlock x:Name="tblkSubjectName" Height="40"            
-                   FontSize="30" Text="Open or Create Subject Folder"
-                   HorizontalAlignment="Center"/>
+        
         <ContentControl Content="{Binding SelectedViewModel}"
                        
                         Height="690"/>

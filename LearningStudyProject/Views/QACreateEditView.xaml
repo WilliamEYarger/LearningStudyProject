@@ -4,10 +4,32 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LearningStudyProject.Views"
+             Loaded="UserControl_Loaded"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="MenuItem" >
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </UserControl.Resources>
     <Grid Background="White">
-        <TextBlock Text="THIS IS THE CREATE EDIT QA FILE"
-                   FontSize="40"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+        <Menu x:Name="QAMainMenu">
+            <MenuItem Name="FilesMenu" Header="Files">
+                <MenuItem Name="SaveFile"  Header="SaveFile"  
+                 Click="SaveFile_Click"/>
+            </MenuItem >
+            <MenuItem Name="EditMenu">
+                <MenuItem Name="NewFile" Header="Begin a New File"
+                 Click="NewFile_Click" />
+                <MenuItem Name="Append" Header="Append"
+                 Click="Append_Click"/>
+
+            </MenuItem>  
+        </Menu>
     </Grid>
 </UserControl>

@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using LearningStudyProject.Commands;
+using LearningStudyProject.HelperClasses;
 
 namespace LearningStudyProject.Views
 {
@@ -23,6 +24,37 @@ namespace LearningStudyProject.Views
         public QACreateEditView()
         {
             InitializeComponent();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            if(SubjectStaticMembers.DataNode == null)
+            {
+                MessageBox.Show("You must select a Subject Node to add Data to First");
+                
+
+
+                return;
+            }
+        }
+
+        private void SaveFile_Click(object sender, RoutedEventArgs e)
+        {
+            // Enter Save File code here
+            MessageBox.Show("Save File Clicked");
+        }
+
+        private void NewFile_Click(object sender, RoutedEventArgs e)
+        {
+
+            // Enter begin a new file code here
+            MessageBox.Show("Begin a New File Clicked");
+        }
+
+        private void Append_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBox.Show("Append Clicked");
         }
     }
 }
