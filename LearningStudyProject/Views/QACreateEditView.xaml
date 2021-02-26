@@ -23,11 +23,12 @@
                 <MenuItem Name="SaveFile"  Header="SaveFile"  
                  Click="SaveFile_Click"/>
             </MenuItem >
-            <MenuItem Name="EditMenu">
+            <MenuItem Name="EditMenu" Header="     EditMenu">
                 <MenuItem Name="NewFile" Header="Begin a New File"
                  Click="NewFile_Click" />
                 <MenuItem Name="Append" Header="Append"
                  Click="Append_Click"/>
+
 
             </MenuItem>  
         </Menu>
