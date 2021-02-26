@@ -1,4 +1,4 @@
-﻿using LearningStudyProject.Commands;
+﻿//using LearningStudyProject.Commands;
 using System.Windows.Input;
 
 namespace LearningStudyProject.ViewModels
@@ -43,7 +43,7 @@ namespace LearningStudyProject.ViewModels
 
         public MainViewModel()
         {
-            UpdateViewCommand = new UpdateViewCommand(this);
+           // UpdateViewCommand = new UpdateViewCommand(this);
         }
 
         public MainViewModel(int ID)

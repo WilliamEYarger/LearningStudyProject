@@ -1,4 +1,8 @@
-﻿2021 02 22 1410 
+﻿2021 02 26 0728
+	1.	Attempt to change views from code behind
+
+
+2021 02 22 1410 
 	1.	*Create Folders: Commands, DataModels, ViewModels, Views
 	2.	*Create class ViewModels.BaseViewModel
 	3.	*Create class ViewModels.MainViewModel

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:LearningStudyProject.Views"
              Loaded="UserControl_Loaded"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="800" d:DesignWidth="1200">
     <UserControl.Resources>
         <Style TargetType="MenuItem" >
             <Setter Property="FontSize" Value="20"/>
@@ -28,9 +28,8 @@
                  Click="NewFile_Click" />
                 <MenuItem Name="Append" Header="Append"
                  Click="Append_Click"/>
-
-
             </MenuItem>  
         </Menu>
+        
     </Grid>
 </UserControl>

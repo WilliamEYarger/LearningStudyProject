@@ -18,22 +18,23 @@
        
         <Menu x:Name="MainMenu" Height="40">
             <MenuItem Header="_Files">
-                <MenuItem Header="Open Subject Folder"
-                 Command="{Binding UpdateViewCommand}"
-                 CommandParameter="SubjectTree"/>
+                <MenuItem x:Name="OpenSubjectFolder" Header="Open Subject Folder"
+                    Click="OpenSubjectFolder_Click"  />               
                 <MenuItem Header="Close Files"/>
             </MenuItem>
             <MenuItem Header="     _Data Files">
-                <MenuItem Header="Creat/Edit QA File"
-                 Command="{Binding UpdateViewCommand}"                          
-                   CommandParameter="QACreateEdit"/>
+                <MenuItem x:Name="QACreateEdit" Header="Creat/Edit QA File"
+                  Click="QACreateEdit_Click" />              
             </MenuItem> 
                       
         </Menu>
         
-        <ContentControl Content="{Binding SelectedViewModel}"
+        <ContentControl
+            x:Name="UserContentControl"            
+            Height="690"/>
+           
                        
-                        Height="690"/>
+                        
     </StackPanel>
     
 </Window>
