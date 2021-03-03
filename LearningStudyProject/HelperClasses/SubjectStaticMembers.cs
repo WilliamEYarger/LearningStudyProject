@@ -44,9 +44,13 @@ namespace LearningStudyProject.HelperClasses
         }
         #endregion ItemCount
 
+        public static string HomeFolderPath { get; set; }
+
+        public static int MyProperty { get; set; }
+
         private static string ItemsCountFilePath;
 
-        private static string HomeFolderPath;
+       // public static string HomeFolderPath;
 
         private static string SubjectName;
 

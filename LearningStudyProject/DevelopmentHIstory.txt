@@ -1,5 +1,26 @@
-﻿2021 02 26 0728
-	1.	Attempt to change views from code behind
+﻿2021 03 03 0732
+	1. *Move the open and create files in the QACreateEditView to its static helper file
+	2. *Change the stying of the textboxes
+	3. *replace line breakes with ~ for storage.
+
+2021 03 02 0756 TASKS
+	1. Create Image/Sound files menu
+		o	*MenuItem Add Image to Question miQuestionJpgUrl
+		o	*MenuItem Add Image to Answer miAnswerJpgUrl
+		o	*MenuItem Add Sound File to Question miQuestionMp3Url
+		o	*MenuItem Add Sound file to Answer miAnswerMp3Url
+	2.	Create a QACreateEditViewModel
+		a.	In QACreateEditViewModel create property int CurrentQNumber
+
+
+2021 03 01 0704
+	1. Task 1 explor all the files in QASolution and see where they are used and what for See 
+		"\AccessoryData\QASolution Files – Use and Explanation.docx""
+
+2021 02 26 0728
+	1.	*Attempt to change views from code behind
+	2.	*Start to flesh out the Menu in the QA View
+	3.	Copy needed portions of Begin a new QA file from the QAProject
 
 
 2021 02 22 1410 

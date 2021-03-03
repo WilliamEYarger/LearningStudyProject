@@ -16,7 +16,8 @@
     </Window.Resources>
     <StackPanel Orientation="Vertical">
        
-        <Menu x:Name="MainMenu" Height="40">
+        <Menu x:Name="MainMenu" Height="30" Margin="0,0,0,10" BorderThickness="2"
+              BorderBrush="Black">
             <MenuItem Header="_Files">
                 <MenuItem x:Name="OpenSubjectFolder" Header="Open Subject Folder"
                     Click="OpenSubjectFolder_Click"  />               
