@@ -56,6 +56,23 @@ namespace LearningStudyProject.HelperClasses
 
         private static string SubjectsNodeDataStringsPath;
 
+        #region Delimiters
+
+
+
+        public static char D1 = Convert.ToChar(50308);//Ą LATIN CAPITAL LETTER A WITH OGONEK
+        public static char D2 = Convert.ToChar(50328);//Ę LATIN CAPITAL LETTER E WITH OGONEK
+        public static char D3 = Convert.ToChar(50350);//Į LATIN CAPITAL LETTER I WITH OGONEK
+        public static char D4 = Convert.ToChar(50610);//Ų LATIN CAPITAL LETTER U WITH OGONEK
+
+
+      
+
+       
+
+
+        #endregion Delimiters
+
         #region Dictionary of Subject Nodes (SubjectNodeDictionary)
         // Create a dictionary of all subject nodes whose key is the node.NodeLevelName
         public static Dictionary<string, SubjectNodes> SubjectNodeDictionary = new Dictionary<string, SubjectNodes>();

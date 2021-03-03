@@ -54,7 +54,7 @@ namespace LearningStudyProject.Views
 
         #endregion qaDictionary
 
-        string QAFilePath;
+        //string QAFilePath;
         #endregion Properties
 
         #region OnLoaded Method
@@ -138,8 +138,9 @@ namespace LearningStudyProject.Views
 
             // Write QAOutputStringsList to output file
 
-            List<string> QAOutputStrings = QAFileStaticHelpers.QAOutputStringsList;
-            File.WriteAllLines(QAFilePath, QAOutputStrings);
+            //List<string> QAOutputStrings = QAFileStaticHelpers.QAOutputStringsList;
+            //File.WriteAllLines(QAFilePath, QAOutputStrings);
+            QAFileStaticHelpers.SaveFiles();
 
         }// End Save File Click
         #endregion Save File Click
@@ -197,7 +198,7 @@ namespace LearningStudyProject.Views
             string ThisAnswser = tbxAnswer.Text;
             int CurrentQANum = QAFileStaticHelpers.CurrentQNumber;
             string CurrentQANumString = CurrentQANum.ToString();
-            QAFileStaticHelpers.QAOutputString = CurrentQANumString + '^' + ThisQuestion + ThisAnswser + '^' + '^';
+            QAFileStaticHelpers.QAOutputString = CurrentQANumString + '^' + ThisQuestion + SubjectStaticMembers.D1+ ThisAnswser + '^' + '^';
             CurrentQANum++;
             QAFileStaticHelpers.CurrentQNumber = CurrentQANum;
             tbkCurrentQuestionNumber.Text = CurrentQANum.ToString();

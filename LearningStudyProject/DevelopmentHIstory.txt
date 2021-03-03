@@ -1,4 +1,12 @@
-﻿2021 03 03 0732
+﻿2021 03 03 0742
+	1.	*Correct errors in the QA save file
+	2.	*In SubjectStaticMembers create delimiters
+	3.	*Use delimiter D1 to delimit the question and answer
+	4.	Create AnswerQuestionsView UserControl see:
+			C:\Users\Owner\OneDrive\Documents\2021CSharpProjects\LearningProject\Logic of Addition.docx
+		a.	*Block out control
+		b.	Create Select Menu item in Main window
+2021 03 03 0732  Commit
 	1. *Move the open and create files in the QACreateEditView to its static helper file
 	2. *Change the stying of the textboxes
 	3. *replace line breakes with ~ for storage.

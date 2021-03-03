@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LearningStudyProject.DataModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -66,10 +67,18 @@ namespace LearningStudyProject.HelperClasses
 
         #endregion QAOutputStringsList
 
-        private static string QADirectoryPath = SubjectStaticMembers.HomeFolderPath + "\\QAFiles";
-        private static string IDTitleTextFilePath = SubjectStaticMembers.HomeFolderPath + "\\ID-TitleText.txt";
+        private static string QADirectoryPath = SubjectStaticMembers.HomeFolderPath + "QAFiles";
+        private static string QAFilePath ;
+        private static string IDTitleTextFilePath = SubjectStaticMembers.HomeFolderPath + "ID-TitleText.txt";
 
         #endregion Properties
+
+
+
+
+
+        #region Public Methods
+
 
         public static void OpenQAFiles()
         {
@@ -77,22 +86,48 @@ namespace LearningStudyProject.HelperClasses
             CreateOpenIDTitleTextfile();
         }
 
-        #region Public Methods
-
+        public static void SaveFiles()
+        {
+            // Check to see that the QAFile exists and write to it
+            
+            File.WriteAllLines(QAFilePath, QAOutputStringsList);
+        }
 
         #endregion Public Method
 
         #region Private Methods
 
         // If the QA File Directory doesn't exist create it
-       
-        
+
+
         private static void CreateOpenQADirectory()
         {
             if (!Directory.Exists(QADirectoryPath))
             {
                 Directory.CreateDirectory(QADirectoryPath);
+                
             }
+
+            //Get the selected DataNode
+            SubjectNodes DataNode = SubjectStaticMembers.DataNode;
+
+            //Convert its ID into the QAFile name
+            string DataNodeName = DataNode.ID.ToString();
+
+            //If the Data node QA File doesn't exist create it
+            QAFilePath = QADirectoryPath + "\\Q" + DataNodeName + ".txt";
+            if (!File.Exists(QAFilePath))
+            {
+                FileStream fileStream = File.Create(QAFilePath);
+            }
+
+            //// Make sure the ID-TitleText file exists
+
+            //if(!File.Exists(QADirectoryPath+ "\\ID-TitleTex.txt"))
+            //{
+            //    FileStream fileStream = File.Create(QADirectoryPath + "\\ID-TitleTex.txt");
+            //}
+
         }
 
         private static void CreateOpenIDTitleTextfile()

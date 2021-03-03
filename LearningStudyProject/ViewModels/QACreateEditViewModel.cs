@@ -19,4 +19,9 @@ namespace LearningStudyProject.ViewModels
 
 
     }
+
+    public class AnswerQuestionsViewModel : BaseViewModel
+    {
+
+    }
 }

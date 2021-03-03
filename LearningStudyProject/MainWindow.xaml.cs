@@ -1,6 +1,7 @@
 ﻿
 using LearningStudyProject.HelperClasses;
 using LearningStudyProject.ViewModels;
+using LearningStudyProject.Views;
 using System.Windows;
 
 namespace LearningStudyProject
@@ -35,7 +36,18 @@ namespace LearningStudyProject
                 MessageBox.Show("You must have a Subject node selected before you can create a Data File");
                 return;
             }
-            UserContentControl.Content = new QACreateEditViewModel();
+            //UserContentControl.Content = new QACreateEditViewModel();
+            UserContentControl.Content = new QACreateEditView();
+        }
+
+        private void TestReview_Click(object sender, RoutedEventArgs e)
+        {
+            if (SubjectStaticMembers.DataNode == null)
+            {
+                MessageBox.Show("You must have a Subject node selected before you can create a Data File");
+                return;
+            }
+            UserContentControl.Content = new AnswerQuestionsView();
         }
     }
 }

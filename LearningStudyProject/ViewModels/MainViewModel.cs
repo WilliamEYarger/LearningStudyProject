@@ -30,6 +30,20 @@ namespace LearningStudyProject.ViewModels
         }
 
 
+        private BaseViewModel _AnswerQuestionsViewModel;
+
+        public BaseViewModel AnswerQuestionsViewModel
+        {
+            get { return _AnswerQuestionsViewModel; }
+            set 
+            { 
+                _AnswerQuestionsViewModel = value;
+                OnPropertyChanged(nameof(AnswerQuestionsViewModel));
+
+            }
+        }
+
+
         private int _SelectedNodeID;
 
         public int SelectedNodeID

@@ -25,7 +25,9 @@
             </MenuItem>
             <MenuItem Header="     _Data Files">
                 <MenuItem x:Name="QACreateEdit" Header="Creat/Edit QA File"
-                  Click="QACreateEdit_Click" />              
+                  Click="QACreateEdit_Click" />
+                <MenuItem x:Name="TestReview" Header="Take Text or Review"
+                  Click="TestReview_Click"/>
             </MenuItem> 
                       
         </Menu>
